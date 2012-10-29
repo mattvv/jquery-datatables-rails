@@ -58,7 +58,7 @@
 			var sValue = aData[iColumn];
 			
 			// ignore empty values?
-			if (bIgnoreEmpty == true && sValue.length == 0) continue;
+			if (bIgnoreEmpty == true && sValue && sValue.length == 0) continue;
 	
 			// ignore unique values?
 			else if (bUnique == true && jQuery.inArray(sValue, asResultData) > -1) continue;
